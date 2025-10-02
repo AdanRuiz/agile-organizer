@@ -84,4 +84,5 @@ jobs:
           VALIDATE_CHECKOV: false
           VALIDATE_PYTHON_PYLINT: false
           VALIDATE_DOCKERFILE_HADOLINT: false
+          VALIDATE_POWERSHELL: false
 
