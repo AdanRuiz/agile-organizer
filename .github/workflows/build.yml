@@ -18,7 +18,7 @@ jobs:
           native-image --version
       - name: Extract configuration files
         run: cd MtdrSpring;
-              wget https://objectstorage.mx-queretaro-1.oraclecloud.com/p/Bg_eV5KPa4E0iFKeKlQ_k55F3OcfCs_33dNFyE2Gz9SBIqKaoFRf_JkaeHF3andL/n/axzmghqes1gn/b/reacttodo-rolax/o/deployment_config.tgz
+              wget https://objectstorage.mx-queretaro-1.oraclecloud.com/p/Bg_eV5KPa4E0iFKeKlQ_k55F3OcfCs_33dNFyE2Gz9SBIqKaoFRf_JkaeHF3andL/n/axzmghqes1gn/b/reacttodo-rolax/o/deployment_config.tgz;
               tar -xzvf deployment_config.tgz;
               source env.sh;
               echo ${{ secrets.AUTH_TOKEN }} | docker login -u "axzmghqes1gn/adan.ruiz@tec.mx" --password-stdin mx-queretaro-1.ocir.io
